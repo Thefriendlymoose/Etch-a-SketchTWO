@@ -185,3 +185,41 @@ body{
 .cell-fill{
     background-color: var(--cell-nbg);
 }
+
+@media(max-width:1000px){
+    .page-wrapper{
+        width: 100vw;
+    }
+    .button-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+
+    }
+
+    #reset{
+        width: 93%;
+    }
+
+    #rainbow{
+        width: 93%;
+    }
+
+}
+
+@media(max-width: 820px){
+    #main-canvas-container{
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media(max-width: 720px){
+    #main-canvas-container{
+        width: 580px;
+        height: 580px;
+    }
+    .slider-wrapper h3{
+        font-size: 16px;
+    }
+}
