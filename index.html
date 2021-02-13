@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header-wrapper">
+            <h1>Etch-a-Sketch</h1>
+        </header>
+        <div class="main-content-wrapper">
+            <div class="options-wrapper">
+                <h2>Options</h2>
+                <section class="options-selection-wrapper">
+                    <div class="button-container">
+                        <div class="color-picker-container">
+                            <label for="bg-color">Background Color:</label>
+                            <input class="color-picker" type="color" id="bg-color" name="bg-color" value="#ffffff">
+                        </div>
+                        <div class="color-picker-container">
+                            <label for="pt-color">Paint Color:</label>
+                            <input class="color-picker" type="color" id="pt-color" name="pt-color" value="#000000">
+                        </div>
+                        <div class="color-picker-container">
+                            <label for="br-color">Grid Color:</label>
+                            <input class="color-picker" type="color" id="br-color" name="br-color" value="#808080">
+                        </div>
+                        <button class="button" id="reset">Reset</button>
+                        <button class="button" id="rainbow">Raindbow</button>
+                    </div>
+                    <div class="slider-wrapper">
+                        <h3>Choose cells per side (changing grid size will reset the canvas)</h3>
+                        <div class="slider-container">
+                            <h4>2</h4>
+                            <input type="range" min="2" max="50" value="25" id="slider">
+                            <h4>50</h4>
+                        </div>
+                        <div>
+                            <output id="current-size">Current size: 25 x 25</output>
+                        </div>
+                        
+                    </div>                   
+                </section>
+            </div>
+            <div class="main-container">
+                <h2>Canvas</h2>
+                <main>
+                    <div id="main-canvas-container">
+
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
